@@ -1,8 +1,6 @@
 pipeline {
   agent any
 
-  tools { nodejs 'NodeJS-20' }   // name must match Manage Jenkins -> Tools -> NodeJS installations
-
   options {
     disableConcurrentBuilds()
     buildDiscarder(logRotator(numToKeepStr: '10'))
