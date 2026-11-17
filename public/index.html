@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Deskwork</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <h1>Deskwork</h1>
+    <p>Objects for a better desk.</p>
+  </header>
+
+  <div class="layout">
+    <main>
+      <h2 class="visually-hidden">Products</h2>
+      <div id="products" class="grid" aria-live="polite">Loading products…</div>
+    </main>
+
+    <aside class="cart" aria-labelledby="cart-title">
+      <h2 id="cart-title">Your cart</h2>
+      <ul id="cart-items" class="cart-items"></ul>
+      <p id="cart-empty" class="empty">Nothing here yet. Add a product to start.</p>
+      <div class="total-row">
+        <span>Total</span>
+        <strong id="cart-total">₹0</strong>
+      </div>
+      <button id="checkout" class="btn primary" disabled>Place order</button>
+      <p id="message" class="message" role="status"></p>
+    </aside>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
