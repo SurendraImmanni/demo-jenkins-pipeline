@@ -34,7 +34,7 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        sshagent(['web-server-ssh']) {
+        sshagent(['target-key']) {
           sh '''
             scp -o StrictHostKeyChecking=no shop.tar.gz $WEB_HOST:/tmp/shop.tar.gz
             ssh -o StrictHostKeyChecking=no $WEB_HOST "
