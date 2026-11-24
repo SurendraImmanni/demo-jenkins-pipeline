@@ -8,8 +8,8 @@ pipeline {
   }
 
   environment {
-    WEB_HOST = 'ubuntu@172.31.4.98'      // web server PRIVATE IP
-    WEB_URL  = 'http://172.31.4.98'      // used by the Verify stage
+    WEB_HOST = 'ubuntu@172.31.0.228'      // web server PRIVATE IP
+    WEB_URL  = 'http://172.31.0.228'      // used by the Verify stage
     APP_DIR  = '/opt/shop'
   }
 
